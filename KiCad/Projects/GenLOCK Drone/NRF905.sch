@@ -1,0 +1,191 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CUSTOM:NRF905 U1
+U 1 1 5CECA706
+P 5950 2850
+F 0 "U1" H 5950 3875 50  0000 C CNN
+F 1 "NRF905" H 5950 3784 50  0000 C CNN
+F 2 "" H 5950 2850 50  0001 C CNN
+F 3 "" H 5950 2850 50  0001 C CNN
+	1    5950 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2650 5150 2650
+Wire Wire Line
+	5150 2650 5150 2750
+Wire Wire Line
+	5300 2750 5150 2750
+Connection ~ 5150 2750
+Wire Wire Line
+	5150 2750 5150 2850
+Wire Wire Line
+	5300 2850 5150 2850
+Connection ~ 5150 2850
+Wire Wire Line
+	5150 2850 5150 2950
+Wire Wire Line
+	5300 2950 5150 2950
+Connection ~ 5150 2950
+Wire Wire Line
+	5150 2950 5150 3050
+Wire Wire Line
+	5300 3050 5150 3050
+Connection ~ 5150 3050
+Wire Wire Line
+	5150 3050 5150 3150
+Wire Wire Line
+	5300 3150 5150 3150
+Connection ~ 5150 3150
+Wire Wire Line
+	5150 3150 5150 3250
+Wire Wire Line
+	5300 3250 5150 3250
+Connection ~ 5150 3250
+Wire Wire Line
+	5150 3250 5150 3350
+Wire Wire Line
+	5300 3350 5150 3350
+Connection ~ 5150 3350
+Wire Wire Line
+	5150 3350 5150 3450
+Wire Wire Line
+	5300 3450 5150 3450
+Connection ~ 5150 3450
+Wire Wire Line
+	5150 3450 5150 3550
+Wire Wire Line
+	5300 3550 5150 3550
+Connection ~ 5150 3550
+Wire Wire Line
+	5150 3550 5150 3650
+Wire Wire Line
+	5300 3650 5150 3650
+Wire Wire Line
+	5150 3650 5050 3650
+Connection ~ 5150 3650
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5CECED0A
+P 5050 3650
+F 0 "#PWR?" H 5050 3400 50  0001 C CNN
+F 1 "GNDREF" V 5055 3522 50  0000 R CNN
+F 2 "" H 5050 3650 50  0001 C CNN
+F 3 "" H 5050 3650 50  0001 C CNN
+	1    5050 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 4250 6050 4350
+Wire Wire Line
+	6050 4350 5950 4350
+Wire Wire Line
+	5950 4250 5950 4350
+Connection ~ 5950 4350
+Wire Wire Line
+	5950 4350 5850 4350
+Wire Wire Line
+	5850 4250 5850 4350
+Connection ~ 5850 4350
+Wire Wire Line
+	5850 4350 5750 4350
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CECF8C3
+P 5750 4350
+F 0 "#PWR?" H 5750 4200 50  0001 C CNN
+F 1 "+3.3V" V 5765 4478 50  0000 L CNN
+F 2 "" H 5750 4350 50  0001 C CNN
+F 3 "" H 5750 4350 50  0001 C CNN
+	1    5750 4350
+	0    -1   -1   0   
+$EndComp
+Text Label 6900 3550 2    50   ~ 0
+TX_EN
+Wire Wire Line
+	6600 3550 6900 3550
+Text HLabel 6900 3550 2    50   Input ~ 0
+TX_EN
+Wire Wire Line
+	6600 2050 6900 2050
+Text Label 6900 2050 2    50   ~ 0
+TRX_CE
+Text HLabel 6900 2050 2    50   Input ~ 0
+TRX_CE
+Wire Wire Line
+	6600 2150 6900 2150
+Text HLabel 6900 2150 2    50   Input ~ 0
+TX_EN
+Text Label 6900 2150 2    50   ~ 0
+TX_EN
+Wire Wire Line
+	6600 2250 6900 2250
+Text Label 6900 2250 2    50   ~ 0
+uPCLK
+Text HLabel 6900 2250 2    50   Input ~ 0
+uPCLK
+Wire Wire Line
+	5300 3900 5150 3900
+$Comp
+L Device:C_Small C?
+U 1 1 5CED4622
+P 5050 3900
+F 0 "C?" V 5150 3900 50  0000 C CNN
+F 1 "10nF" V 4950 3900 50  0000 C CNN
+F 2 "" H 5050 3900 50  0001 C CNN
+F 3 "~" H 5050 3900 50  0001 C CNN
+	1    5050 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5CED6115
+P 4950 3900
+F 0 "#PWR?" H 4950 3650 50  0001 C CNN
+F 1 "GNDREF" V 4955 3772 50  0000 R CNN
+F 2 "" H 4950 3900 50  0001 C CNN
+F 3 "" H 4950 3900 50  0001 C CNN
+	1    4950 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 3400 6750 3400
+$Comp
+L Device:R_Small_US R?
+U 1 1 5CED70DA
+P 6850 3400
+F 0 "R?" V 6645 3400 50  0000 C CNN
+F 1 "22K" V 6736 3400 50  0000 C CNN
+F 2 "" H 6850 3400 50  0001 C CNN
+F 3 "~" H 6850 3400 50  0001 C CNN
+	1    6850 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 3400 7100 3400
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5CED7B3B
+P 7100 3400
+F 0 "#PWR?" H 7100 3150 50  0001 C CNN
+F 1 "GNDREF" V 7105 3272 50  0000 R CNN
+F 2 "" H 7100 3400 50  0001 C CNN
+F 3 "" H 7100 3400 50  0001 C CNN
+	1    7100 3400
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
