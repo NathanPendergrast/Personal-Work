@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name GenLOCK-Drone-rescue)(type Legacy)(uri "${KIPRJMOD}/GenLOCK Drone-rescue.lib")(options "")(descr ""))
+)
