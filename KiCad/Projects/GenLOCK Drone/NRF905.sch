@@ -137,7 +137,7 @@ Wire Wire Line
 	6600 2250 6900 2250
 Text Label 6900 2250 2    50   ~ 0
 uPCLK
-Text HLabel 6900 2250 2    50   Input ~ 0
+Text HLabel 6900 2250 2    50   Output ~ 0
 uPCLK
 Wire Wire Line
 	5300 3900 5150 3900
@@ -196,30 +196,28 @@ Wire Wire Line
 Wire Wire Line
 	5150 3750 4350 3750
 Wire Wire Line
-	4350 3750 4350 4250
-Wire Wire Line
-	4350 4250 4500 4250
+	4350 3750 4350 3850
 $Comp
 L Device:C_Small C?
 U 1 1 5CED52A1
-P 4600 4250
-F 0 "C?" V 4700 4250 50  0000 C CNN
-F 1 "3.3nF" V 4500 4250 50  0000 C CNN
-F 2 "" H 4600 4250 50  0001 C CNN
-F 3 "~" H 4600 4250 50  0001 C CNN
-	1    4600 4250
-	0    1    1    0   
+P 4350 3950
+F 0 "C?" V 4450 3950 50  0000 C CNN
+F 1 "3.3nF" V 4250 3950 50  0000 C CNN
+F 2 "" H 4350 3950 50  0001 C CNN
+F 3 "~" H 4350 3950 50  0001 C CNN
+	1    4350 3950
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GNDREF #PWR?
 U 1 1 5CED5DBC
-P 4700 4250
-F 0 "#PWR?" H 4700 4000 50  0001 C CNN
-F 1 "GNDREF" V 4705 4122 50  0000 R CNN
-F 2 "" H 4700 4250 50  0001 C CNN
-F 3 "" H 4700 4250 50  0001 C CNN
-	1    4700 4250
-	0    -1   -1   0   
+P 4350 4050
+F 0 "#PWR?" H 4350 3800 50  0001 C CNN
+F 1 "GNDREF" V 4355 3922 50  0000 R CNN
+F 2 "" H 4350 4050 50  0001 C CNN
+F 3 "" H 4350 4050 50  0001 C CNN
+	1    4350 4050
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4850 2150 4850 2450
@@ -426,4 +424,185 @@ F 3 "~" H 2750 2450 50  0001 C CNN
 	1    2750 2450
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	6600 2350 6900 2350
+Text Label 6900 2350 2    50   ~ 0
+CD
+Text HLabel 6900 2350 2    50   Output ~ 0
+CD
+Wire Wire Line
+	6600 2450 6900 2450
+Text Label 6900 2450 2    50   ~ 0
+AM
+Text HLabel 6900 2450 2    50   Output ~ 0
+AM
+Wire Wire Line
+	6050 4350 6150 4350
+Connection ~ 6050 4350
+$Comp
+L Device:C_Small C?
+U 1 1 5CEDE401
+P 6250 4350
+F 0 "C?" V 6400 4350 50  0000 C CNN
+F 1 "33PF" V 6112 4350 50  0000 C CNN
+F 2 "" H 6250 4350 50  0001 C CNN
+F 3 "~" H 6250 4350 50  0001 C CNN
+	1    6250 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5CEDF64B
+P 6350 4350
+F 0 "#PWR?" H 6350 4100 50  0001 C CNN
+F 1 "GNDREF" V 6355 4222 50  0000 R CNN
+F 2 "" H 6350 4350 50  0001 C CNN
+F 3 "" H 6350 4350 50  0001 C CNN
+	1    6350 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 2550 6900 2550
+Text Label 6900 2550 2    50   ~ 0
+DR
+Text HLabel 6900 2550 2    50   Output ~ 0
+DR
+Wire Wire Line
+	6600 2700 6900 2700
+Text HLabel 6900 2700 2    50   Output ~ 0
+MISO
+Text Label 6900 2700 2    50   ~ 0
+MISO
+Wire Wire Line
+	6600 2800 6900 2800
+Text HLabel 6900 2800 2    50   Input ~ 0
+MOSI
+Text Label 6900 2800 2    50   ~ 0
+MOSI
+Wire Wire Line
+	6600 2900 6900 2900
+Text Label 6900 2900 2    50   ~ 0
+SPI_SCK
+Wire Wire Line
+	6600 3000 6900 3000
+Text Label 6900 3000 2    50   ~ 0
+SPI_CSN
+Text HLabel 6900 2900 2    50   Input ~ 0
+SPI_SCK
+Text HLabel 6900 3000 2    50   Input ~ 0
+SPI_CSN
+Wire Wire Line
+	6600 3250 6750 3250
+Wire Wire Line
+	6750 3250 6750 3150
+Wire Wire Line
+	6600 3150 6700 3150
+Wire Wire Line
+	6700 3150 6700 3050
+$Comp
+L Oscillator:XO32 X?
+U 1 1 5CEF225C
+P 8300 3100
+F 0 "X?" V 8254 3444 50  0000 L CNN
+F 1 "XO32" V 8345 3444 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm" H 9000 2750 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/XO32.pdf" H 8200 3100 50  0001 C CNN
+	1    8300 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 2800 8300 2800
+Wire Wire Line
+	6700 3050 7750 3050
+Wire Wire Line
+	8300 2800 8650 2800
+Connection ~ 8300 2800
+$Comp
+L Device:C_Small C?
+U 1 1 5CEF7465
+P 8750 2800
+F 0 "C?" V 8521 2800 50  0000 C CNN
+F 1 "10PF" V 8612 2800 50  0000 C CNN
+F 2 "" H 8750 2800 50  0001 C CNN
+F 3 "~" H 8750 2800 50  0001 C CNN
+	1    8750 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 2800 8950 2800
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5CEF9ACB
+P 9100 2800
+F 0 "#PWR?" H 9100 2550 50  0001 C CNN
+F 1 "GNDREF" H 9105 2627 50  0000 C CNN
+F 2 "" H 9100 2800 50  0001 C CNN
+F 3 "" H 9100 2800 50  0001 C CNN
+	1    9100 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7850 3400 8300 3400
+Wire Wire Line
+	6750 3150 7750 3150
+Wire Wire Line
+	8300 3400 9100 3400
+Wire Wire Line
+	9100 3400 9100 3050
+Connection ~ 8300 3400
+$Comp
+L Device:C_Small C?
+U 1 1 5CEFE9A2
+P 9100 2950
+F 0 "C?" H 9192 2996 50  0000 L CNN
+F 1 "10PF" H 9192 2905 50  0000 L CNN
+F 2 "" H 9100 2950 50  0001 C CNN
+F 3 "~" H 9100 2950 50  0001 C CNN
+	1    9100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2850 9100 2800
+Connection ~ 9100 2800
+Wire Wire Line
+	8600 3100 8600 2950
+Wire Wire Line
+	8600 2900 8950 2900
+Wire Wire Line
+	8950 2900 8950 2800
+Connection ~ 8950 2800
+Wire Wire Line
+	8950 2800 9100 2800
+Wire Wire Line
+	8000 3100 8000 2950
+Wire Wire Line
+	8000 2950 8600 2950
+Connection ~ 8600 2950
+Wire Wire Line
+	8600 2950 8600 2900
+$Comp
+L Device:R_Small_US R?
+U 1 1 5CF06551
+P 7850 3100
+F 0 "R?" H 7700 3100 50  0000 L CNN
+F 1 "1M" H 7900 3100 50  0000 L CNN
+F 2 "" H 7850 3100 50  0001 C CNN
+F 3 "~" H 7850 3100 50  0001 C CNN
+	1    7850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3050 7750 3000
+Wire Wire Line
+	7750 3150 7750 3200
+Wire Wire Line
+	7750 3200 7850 3200
+Connection ~ 7850 3200
+Wire Wire Line
+	7850 3200 7850 3400
+Wire Wire Line
+	7850 3000 7750 3000
+Connection ~ 7850 3000
+Wire Wire Line
+	7850 2800 7850 3000
 $EndSCHEMATC
