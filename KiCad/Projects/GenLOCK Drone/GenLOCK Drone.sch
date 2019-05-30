@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:GenLOCK Drone-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Drone PCB Schematic"
 Date "2019-05-28"
 Rev "1"
@@ -29,5 +29,14 @@ F8 "MISO" O L 10100 1550 50
 F9 "MOSI" I L 10100 1650 50 
 F10 "SPI_SCK" I L 10100 1750 50 
 F11 "SPI_CSN" I L 10100 1850 50 
+$EndSheet
+$Sheet
+S 1450 850  550  400 
+U 5CEF2597
+F0 "HMC5883L" 50
+F1 "HMC5883L.sch" 50
+F2 "DRDY" O R 2000 950 50 
+F3 "SDA_5V" I R 2000 1050 50 
+F4 "SCL_5V" I R 2000 1150 50 
 $EndSheet
 $EndSCHEMATC
